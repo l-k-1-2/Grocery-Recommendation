@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery recommendation</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: url("./static/home.png");
+            background-size: contain;
+            /* background-repeat: no-repeat; */
+        }
+
+        .main {
+            /* background-color: wheat; */
+            /* text-align: center; */
+            height: 36rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        hr {
+            width: 23rem;
+            font-size: large;
+        }
+
+        h1{
+            font-family: 'Roboto';
+            font-size: 30pt;
+        }
+
+        h2{
+            font-family: 'Roboto';
+            font-weight: 400;
+        }
+
+        .subdiv {
+            text-align: center;
+            /* width: 20rem; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input {
+            width: 25rem;
+            height: 2rem;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        button {
+            padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+            background-color: #EF5350;
+            color: white;
+            border: none;
+
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="subdiv">
+            <h1>Grocery Recommendation System</h1>
+            <hr>
+            <form action="/submit" method="post">
+                <h2>Please enter your unique customer id below to view your recommendations</h2>
+                <input type="number" name="custid" placeholder="Enter your Customer ID"> 
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
